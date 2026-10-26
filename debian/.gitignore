@@ -8,3 +8,5 @@
 /*.substvars
 /tmp
 
+/qcom-sensors-binaries
+/qcom-sensors-binaries-dev

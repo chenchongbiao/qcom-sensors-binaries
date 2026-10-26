@@ -1,0 +1,15 @@
+override_dh_auto_install:
+
+# Qualcomm prebuilts intentionally retain their upstream build IDs and debug
+# information; do not rewrite or split the proprietary ELF files.
+override_dh_dwz:
+
+override_dh_strip:
+
+# arch:all builds skip dh_makeshlibs/dh_shlibdeps entirely (-a matches nothing,
+# overrides included), so run them by package name to keep the shlibs file,
+# ${shlibs:Depends} and the ldconfig trigger.
+override_dh_installdeb:
+	dh_makeshlibs -pqcom-sensors-binaries
+	dh_shlibdeps -pqcom-sensors-binaries
+	dh_installdeb

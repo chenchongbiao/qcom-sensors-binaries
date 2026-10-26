@@ -9,12 +9,37 @@ Build-Depends: debhelper-compat (= 13),
                lintian,
                dh-exec,
                pandoc,
+               curl,
+               file,
+               camx-protobuf-kodiak-compiler,
 
 Package: qcom-sensors-binaries
 Architecture: all
-Section: admin
+Section: libs
 Priority: optional
-Depends: ${misc:Depends},
-Description: qcom-sensors-binaries
- This package provides the qcom-sensors-binaries.
+Depends: qcom-sensing-hub,
+         camx-abseil-kodiak,
+         camx-protobuf-kodiak,
+         libglib2.0-0t64,
+         libqmi-common1,
+         libqencdec1,
+         libqcci1,
+         libqcsi1,
+         libcdsprpc1,
+         ${shlibs:Depends},
+         ${misc:Depends},
+Description: Qualcomm proprietary sensor runtime binaries
+ Provides the sscrpcd service, Qualcomm sensor libraries, registry data, and
+ platform configuration for Sensors DSP communication on Qualcomm platforms.
+
+Package: qcom-sensors-binaries-dev
+Architecture: all
+Section: libdevel
+Priority: optional
+Depends: qcom-sensors-binaries,
+         qcom-sensing-hub-dev,
+         ${misc:Depends},
+Description: Qualcomm proprietary sensor development files
+ Provides headers, pkg-config metadata, and unversioned shared-library links
+ for Qualcomm sensor client development.
 

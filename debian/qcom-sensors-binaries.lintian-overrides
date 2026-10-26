@@ -1,0 +1,22 @@
+# This is the first Debian revision in the Radxa archive and is not tied to a
+# Debian BTS issue.
+initial-upload-closes-no-bugs
+
+# Qualcomm distributes these proprietary ARM64 objects with debug information;
+# the packaging preserves the vendor binaries byte-for-byte.
+unstripped-binary-or-object [usr/bin/sscrpcd]
+unstripped-binary-or-object [usr/lib/aarch64-linux-gnu/libQshQmiIDL.so.1.2.1]
+unstripped-binary-or-object [usr/lib/aarch64-linux-gnu/libQshSession.so.1.2.1]
+unstripped-binary-or-object [usr/lib/aarch64-linux-gnu/libsensinghubapiprop.so.1.2.1]
+unstripped-binary-or-object [usr/lib/aarch64-linux-gnu/libsns_direct_channel_stub.so.1.2.1]
+unstripped-binary-or-object [usr/lib/aarch64-linux-gnu/libsns_remote_proc_state_stub.so.1.2.1]
+
+# The upstream sensor release is a single tightly-coupled runtime bundle.
+package-name-doesnt-match-sonames
+arch-independent-package-contains-binary-or-object
+triplet-dir-and-architecture-mismatch is for arm64 instead of all [usr/lib/aarch64-linux-gnu/]
+
+# libQshQmiIDL links only glib/qmi libs, not libc directly. lintian 2.116
+# flagged this as library-not-linked-against-libc; that tag was removed in
+# newer lintian and a stale override entry triggers the non-overridable
+# alien-tag error, so no entry is written here.

@@ -1,0 +1,10 @@
+staging/usr/include usr
+staging/usr/lib/aarch64-linux-gnu/libQshQmiIDL.so usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libQshSession.so usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libsensinghubapiprop.so usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libsns_direct_channel_stub.so usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libsns_remote_proc_state_stub.so usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/pkgconfig/sensors-api.pc usr/lib/aarch64-linux-gnu/pkgconfig
+staging/usr/lib/aarch64-linux-gnu/pkgconfig/sensors-core.pc usr/lib/aarch64-linux-gnu/pkgconfig
+staging/usr/lib/aarch64-linux-gnu/pkgconfig/sensors-registry.pc usr/lib/aarch64-linux-gnu/pkgconfig
+staging/usr/lib/aarch64-linux-gnu/pkgconfig/sensors-services.pc usr/lib/aarch64-linux-gnu/pkgconfig
