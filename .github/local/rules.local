@@ -1,0 +1,7 @@
+override_dh_auto_install:
+
+# Qualcomm prebuilts intentionally retain their upstream build IDs and debug
+# information; do not rewrite or split the proprietary ELF files.
+override_dh_dwz:
+
+override_dh_strip:

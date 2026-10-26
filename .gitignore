@@ -11,11 +11,14 @@
 # Local VS Code configuration
 /.vscode*
 
-# Kernel build artifacts
+# Debian build artifacts and proprietary source archive
 /*.deb
 /*.buildinfo
 /*.changes
 /.pc
+/qcom-sensors-prebuilts_*.tar.gz
+/qcom-sensors-prebuilts_*.tar.gz.tmp
+/staging
 
 # Output folder
 /out

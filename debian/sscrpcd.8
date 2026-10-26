@@ -1,0 +1,19 @@
+.TH SSCRPCD 8 "September 2026" "qcom-sensors-binaries 1.2.1" "System Administration"
+.SH NAME
+sscrpcd \- Qualcomm Sensors DSP RPC daemon
+.SH SYNOPSIS
+.B sscrpcd
+.I domain
+.SH DESCRIPTION
+.B sscrpcd
+provides the userspace RPC endpoint used to communicate with sensor services
+running on the Qualcomm Sensors DSP. The packaged systemd service starts it for
+the
+.B sensorspd
+domain on supported Qualcomm platforms.
+.SH FILES
+.TP
+.I /etc/sensors
+Sensor service configuration and registry metadata.
+.SH SEE ALSO
+.BR systemctl (1)

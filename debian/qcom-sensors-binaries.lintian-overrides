@@ -1,0 +1,10 @@
+# This is the first Debian revision in the Radxa archive and is not tied to a
+# Debian BTS issue.
+initial-upload-closes-no-bugs
+
+# Qualcomm distributes these proprietary ARM64 objects with debug information;
+# the packaging preserves the vendor binaries byte-for-byte.
+unstripped-binary-or-object
+
+# The upstream sensor release is a single tightly-coupled runtime bundle.
+package-name-doesnt-match-sonames
