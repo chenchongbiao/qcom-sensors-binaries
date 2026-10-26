@@ -1,0 +1,9 @@
+staging/etc/sensors etc
+staging/usr/bin/sscrpcd usr/bin
+staging/usr/lib/aarch64-linux-gnu/libQshQmiIDL.so.1* usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libQshSession.so.1* usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libsensinghubapiprop.so.1* usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libsns_direct_channel_stub.so.1* usr/lib/aarch64-linux-gnu
+staging/usr/lib/aarch64-linux-gnu/libsns_remote_proc_state_stub.so.1* usr/lib/aarch64-linux-gnu
+staging/usr/lib/systemd/system/sscrpcd.service usr/lib/systemd/system
+staging/usr/share/doc/qcom-sensors-binaries usr/share/doc

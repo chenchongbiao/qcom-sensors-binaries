@@ -1,0 +1,15 @@
+CUSTOM_DEBUILD_ARG = -aarm64 -Pcross
+
+# Install target dependencies during devcontainer setup with the build profile.
+post_build_dep: arm64_crossbuild_dep
+
+arm64_crossbuild_dep: export DEB_BUILD_PROFILES = cross
+
+ARCHIVE := qcom-sensors-prebuilts_1.2.1_armv8a.tar.gz
+STAGING := staging
+
+.PHONY: stage-qcom-sensors-binaries
+stage-qcom-sensors-binaries:
+	./scripts/stage-qcom-sensors-binaries.sh
+
+pre_debuild: stage-qcom-sensors-binaries

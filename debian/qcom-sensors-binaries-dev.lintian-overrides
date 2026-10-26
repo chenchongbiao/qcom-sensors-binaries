@@ -1,0 +1,4 @@
+# This is the first Debian revision in the Radxa archive and is not tied to a
+# Debian BTS issue.
+initial-upload-closes-no-bugs
+triplet-dir-and-architecture-mismatch is for arm64 instead of all [usr/lib/aarch64-linux-gnu/]

@@ -1,6 +1,6 @@
-qcom-sensors-binaries (0.1.0-1) UNRELEASED; urgency=medium
+qcom-sensors-binaries (1.2.1-1) UNRELEASED; urgency=medium
 
-  * Add initial Debian packaging support
+  * Package Qualcomm sensor prebuilts 1.2.1 for Radxa Q6A.
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Thu, 01 Jan 1970 08:00:00 +0800
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 23 Oct 2026 18:55:43 +0800
 
