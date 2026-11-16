@@ -1,5 +1,11 @@
 override_dh_auto_install:
 
+# Only repackage vendor ARM64 ELFs. The Debian 12 build container cannot resolve
+# their target-only Qualcomm, Abseil 2601 and Protobuf 33.6 libraries. Keep the
+# complete runtime dependencies (including the ELF ABI minima) in debian/control
+# instead of deriving them from the build host.
+override_dh_shlibdeps:
+
 # Qualcomm prebuilts intentionally retain their upstream build IDs and debug
 # information; do not rewrite or split the proprietary ELF files.
 override_dh_dwz:
