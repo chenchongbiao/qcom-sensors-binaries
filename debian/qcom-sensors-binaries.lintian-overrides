@@ -8,3 +8,7 @@ unstripped-binary-or-object
 
 # The upstream sensor release is a single tightly-coupled runtime bundle.
 package-name-doesnt-match-sonames
+
+# Vendor QMI IDL data links to GLib and the QMI libraries, with no direct libc
+# dependency. Preserve its upstream DT_NEEDED entries rather than relinking it.
+library-not-linked-against-libc [usr/lib/aarch64-linux-gnu/libQshQmiIDL.so.1.2.1]
