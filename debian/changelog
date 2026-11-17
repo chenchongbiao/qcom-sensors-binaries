@@ -1,6 +1,9 @@
-qcom-sensors-binaries (1.2.1-1) UNRELEASED; urgency=medium
+qcom-sensors-binaries (1.2.1-1) unstable; urgency=medium
 
+  [ "Radxa Computer Co., Ltd" ]
   * Package Qualcomm sensor prebuilts 1.2.1 for Radxa Q6A.
 
- -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Fri, 23 Oct 2026 18:55:43 +0800
+  [ Chongbiao Chen ]
+  * fix: package ARM64 sensor prebuilts without host shlibdeps
 
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Tue, 17 Nov 2026 08:29:35 +0000
