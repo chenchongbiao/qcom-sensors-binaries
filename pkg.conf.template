@@ -1,7 +1,7 @@
 {
   "*": {
     "Releases": [
-      "qcs6490-resolute,
+      "qcs6490-resolute",
       "qcs6490-resolute-test"
     ]
   }
